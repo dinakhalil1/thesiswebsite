@@ -1,0 +1,720 @@
+/*Colors*/
+/*dark grey #373334*/
+/*creamy bg #fcf8f5*/
+
+/* Variables */
+:root {
+	--top-color: rgba(0, 0, 0, 0.4);
+	--bottom-color: rgba(0, 0, 0, 0.4);
+	--bg-dark: linear-gradient(var(--top-color), var(--bottom-color));
+	--bg-hover: linear-gradient(rgba(168, 0, 47, 0.6), rgba(168, 0, 47, 0.6));
+	--text-translate: translateY(40%);
+	--hover-fontsize: 16px;
+	--hover-fontsize-sm: 11px;
+}
+
+body {
+	cursor: vertical-text; 
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4;
+	/*color: #777;*/
+	/*background-color: #eee;*/
+	background: #fcf8f5;
+	/*background: white;*/
+}
+
+.header {
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*very top part*/
+.text-box {
+	color: grey;
+	padding: 0 2.5em 0 2.5em;
+	text-align: center;
+	transition: color rgba(0,0,0,0) .3s ease;
+
+}
+h1{
+	font: 'Poppins', sans-serif;
+}
+#title {
+	text-transform: uppercase;
+	/*font-family: 'Poppins', sans-serif;*/
+	font-size: 45px;
+	letter-spacing: 1px;
+	margin-left: -25px;
+	/*margin-bottom: 1000px;*/
+	/* position: absolute;*/
+	position: relative;
+	/* transition: color rgba(0,0,0,0) .3s ease;*/
+}
+
+.text-box:hover > #title {
+	transform: scale(0.8);
+	transition: 0.3s ease;
+	color: #fff;
+}
+/*end of you're not supposed to write that*/
+
+/*STARTTT of the not trending top right corner*/
+.page h4 {
+	/*padding: 85px 0 0 20px;*/
+	text-decoration: underline;
+	font: 550 16px 'poppins', sans-serif;
+	/*float: right;*/
+	/*transform-origin: 5 14;*/
+	text-decoration: none;
+	transform: rotate(40deg);
+	/*transform-origin: right;*/
+	/*position: fixed;*/
+	padding-top: 55px;
+	padding-right: 23px;
+	color: red;
+	position: absolute; top: 0; right: 0; width: 200px; text-align:right;
+}
+
+.page h4:hover {
+	color: #373334;
+}
+
+.foldtl {
+	position: all;
+	-webkit-box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.8);
+	box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.8);
+}
+
+.foldtl:before {
+	content: "";
+	position: absolute;
+	/*position: fixed; for animating*/
+	top: 0%;
+	right: 0%;
+	width: 0px;
+	height: 0px;
+	/*below is the color of the flipped page*/
+	/*border-bottom: 120px solid #fcf8f5; #bf0b3e*/
+	border-bottom: 120px solid #fff;
+	border-right: 150px solid #373334;
+	-webkit-box-shadow: -7px 7px 7px rgba(0,0,0,0.5);
+	-moz-box-shadow: -7px 7px 7px rgba(0,0,0,0.5);
+	box-shadow: -7px 7px 7px rgba(0,0,0,0.5);
+}
+
+/* Middle Section */
+/*the message!!*/
+.middle-section {
+	position: relative;
+	min-block-size: 100%;
+	min-inline-size: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	display: grid;
+	place-content: center; 
+}
+
+/*START OF REDACTEDDDD*/
+h3::before {  
+	transform: scaleX(1) scaleY(0.85);
+	transform-origin: bottom left;
+}
+
+h3:hover::before {
+	transform: scaleX(0);
+	transform-origin: right;
+}
+
+h3::before {
+	content: "";
+	display: block;
+	position: absolute; 
+	top: 0; right: 0; bottom: 0; left: 0;
+	inset: 0 0 0 0;
+	background: #373334;
+	z-index: -1;
+	transition: transform .3s ease;
+}
+
+h3 {
+	position: relative;
+	display:inline;
+	font-family: 'Poppins', sans-serif;
+	float: center;
+	font-size: 250%;
+	color: #373334;
+}
+/*END OF REDACTEDDDD*/
+
+h2{
+	display: inline-block;
+	font-weight: 650;
+	line-height: 1.4;
+	font-size: 250%;
+	color: #373334;
+	/*color: black; */
+	display:inline; 
+}
+
+/*Quote part below spot the real article*/
+.quote-container {
+	font-size: 23px;
+	padding: auto;
+	margin: 5px 0;
+	text-align: left;
+}
+
+.quote-resize {
+	margin: 0 auto;
+	width: 80%;
+}
+/*end of Quote part below spot the real article*/
+
+/*spot the real article phrase bas*/
+.timeline-container {
+	position: relative;
+	text-align: center;
+	margin: 200px 0;
+	padding: 30px;
+	width: 100%;
+}
+
+.timeline-heading {
+	position: relative;
+	font-size: 30px;
+	text-transform: uppercase;
+	width: 550px;
+	margin: 0 auto;
+}
+/*end of that spot the real article phrase*/
+
+/*hr {
+  border-color: rgba(119, 119, 119, 0.2);
+  margin-top: 5px;
+  }*/
+
+  .grid-center {
+  	margin: 10px;
+  	padding: 10px;
+
+  }
+
+  /*hena haykoon the responsive thing!!!*/
+  .grid-contain {
+
+  	margin-top: auto    
+  	margin-left: auto;
+  	display: grid;
+  	grid-template-columns: repeat(, minmax(280px, 4fr));
+  	grid-gap: 40px;
+
+  }
+
+  .grid {
+  	background: var(--bg-dark);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  .grid:hover > .year::after {
+  	font-size: var(--hover-fontsize);
+  	font-weight: normal;
+  	display: block;
+  	margin: 0 auto;
+  	transform: var(--text-translate);
+  	width: 80%;
+  }
+
+  .year {
+  	font-size: 50px;
+  	color: #eee;
+  }
+
+.correct{
+  	background: rgba(0,255,0,0.5);
+}
+
+  .content1 {
+  	background: var(--bg-dark),
+  	url(https://ropercenter.cornell.edu/sites/default/files/styles/800x600/public/Images/New-York-Times-Logo8x6_0.png?itok=7YqGOSMA)      
+  	no-repeat center;
+
+  	/*below is the background without tint*/
+ /*background: url(https://ropercenter.cornell.edu/sites/default/files/styles/800x600/public/Images/New-York-Times-Logo8x6_0.png?itok=7YqGOSMA);
+ */
+ background-size: cover;
+}
+
+.content1:hover {
+	background: var(--bg-hover),
+	url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+	center;
+
+	/*below is the hover without tint on the background*/
+ /*background: url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+ center;*/
+
+ background-size: 120%;
+ align-items: start;
+ box-shadow: 0 24px 28px rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
+}
+
+.content1:hover > .year::after {
+	content: "lorem rnvkjnvj vvjnev vnvnvjns jnvkjznevj jnvkajnev";
+}
+
+.content2 {
+	background: var(--bg-dark),
+	url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+	no-repeat center;
+	background-size: cover;
+}
+
+.content2:hover {
+	background: var(--bg-hover),
+	url(https://ropercenter.cornell.edu/sites/default/files/styles/800x600/public/Images/New-York-Times-Logo8x6_0.png?itok=7YqGOSMA)
+	center;
+	background-size: 120%;
+	align-items: start;
+	box-shadow: 0 24px 28px rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
+}
+
+.content2:hover > .year::after {
+	content: "lorem rnvkjnvj vvjnev vnvnvjns jnvkjznevj jnvkajnev.";
+}
+
+.content3 {
+	background: var(--bg-dark),
+	url(https://ropercenter.cornell.edu/sites/default/files/styles/800x600/public/Images/New-York-Times-Logo8x6_0.png?itok=7YqGOSMA)
+	no-repeat center;
+	background-size: cover;
+}
+
+.content3:hover {
+	background: var(--bg-hover),
+	url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+	center;
+	background-size: 120%;
+	align-items: start;
+	box-shadow: 0 24px 28px rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
+}
+
+.content3:hover > .year::after {
+	content: "jafnkjfhvbjhbaj afnjhbjvhazev ahjrfjn vajsfakhfas asjfkjnfjbr jshdbf ajwfv skmv.";
+}
+
+/* IKB-ART content4 */
+
+
+.content5 {
+	background: var(--bg-dark),
+	url(https://ropercenter.cornell.edu/sites/default/files/styles/800x600/public/Images/New-York-Times-Logo8x6_0.png?itok=7YqGOSMA)
+	no-repeat center;
+	background-size: cover;
+}
+
+.content5:hover {
+	background: var(--bg-hover),
+	url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+	center;
+	background-size: 120%;
+	align-items: start;
+	box-shadow: 0 24px 28px rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
+}
+
+.content5:hover > .year::after {
+	content: "lorem rnvkjnvj vvjnev vnvnvjns jnvkjznevj jnvkajnev.";
+}
+
+.content6 {
+	background: var(--bg-dark),
+	url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+	no-repeat center;
+	background-size: cover;
+}
+
+.content6:hover {
+	background: var(--bg-hover),
+	url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+	center;
+	background-size: 120%;
+	align-items: start;
+	box-shadow: 0 24px 28px rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
+}
+
+.content6:hover > .year::after {
+	content: "lorem rnvkjnvj vvjnev vnvnvjns jnvkjznevj jnvkajnev.";
+}
+
+.content4 {
+	background: var(--bg-dark),
+	url(https://payload.cargocollective.com/1/21/677272/13310664/NYT_MAG_FBI__02_McQuade_1340_c.jpg)
+	no-repeat center;
+	background-size: cover;
+}
+
+.content4:hover {
+	background: var(--bg-hover),
+	url(https://ropercenter.cornell.edu/sites/default/files/styles/800x600/public/Images/New-York-Times-Logo8x6_0.png?itok=7YqGOSMA)
+	top;
+	background-size: 120%;
+	align-items: start;
+	box-shadow: 0 24px 28px rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
+}
+
+.content4:hover > .year::after {
+	content: "wjenfakjwfhj vaefjhab`erv akjrvanerjnv lorem rnvkjnvj vvjnev vnvnvjns jnvkjznevj jnvkajnevlorem rnvkjnvj vvjnev vnvnvjns jnvkjznevj jnvkajnevlorem rnvkjnvj vvjnev vnvnvjns jnvkjznevj jnvkajnev.";
+}
+
+
+/* Bottom Section */
+
+.bottom-section {
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 2.5rem;
+}
+
+#quote-bottom {
+	margin: -200px 0;
+	background: var(--bg-dark),
+	url(https://lh3.googleusercontent.com/proxy/sqYzRQLbBKOPs-2FujMgIjikrl2Aw3f42ErvW8EwJp2woZ00yNGTL56jZ9gNuboqryhLznGRbbtxIe6Wf8dyT5PlDjc5bYw2CnRs9lyfTrM)
+	no-repeat top / cover;
+	background-attachment: fixed;
+}
+
+#qb-resize {
+	color: #eee;
+	width: 60%;
+	padding: 40px;
+	outline: 2px solid #eee;
+	outline-offset: -2px;
+}
+
+.learn-container {
+	padding: 150px 100px;
+	text-align: center;
+	margin: 300px 0;
+}
+
+
+@font-face {
+	font-family: poppins;
+	src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+	font-display: shadow-primary;
+}
+
+
+/*BEGINING OF BUTTONSSS*/
+body {
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'poppins', sans-serif;
+}
+
+body .cybr-btn + .cybr-btn {
+	margin-top: 2rem;
+}
+
+.cybr-btn {
+	--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+	--shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+	--primary-hue: 0;
+	--primary-lightness: 50;
+	--color: hsl(0, 0%, 100%);
+	--font-size: 15px;
+	--label-size: 9px;
+	--border: 4px;
+	--shimmy-distance: 5;
+	--clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+	--clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+	--clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+	--clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+	--clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+	--clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+	--clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+	font-family: 'poppins', sans-serif;
+	color: var(--color);
+	cursor: pointer;
+	background: transparent;
+	font-size: var(--font-size);
+	outline: transparent;
+	letter-spacing: 2px;
+	position: relative;
+	font-weight: 500;
+	border: 0;
+	min-width: 300px;
+	height: 75px;
+	line-height: 75px;
+	transition: background 0.2s;
+}
+
+.cybr-btn:hover {
+	/*text-transform: uppercase;*/
+	--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+}
+.cybr-btn:active {
+	/*text-transform: uppercase;*/
+	--primary: hsl(var(--primary-hue), 25%, calc(var(--primary-lightness, 10) * 0.6%));
+}
+
+.cybr-btn:after,
+.cybr-btn:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	clip-path: var(--clip);
+	z-index: -1;
+}
+
+.cybr-btn:before {
+	background: white;
+	transform: translate(var(--border), 0);
+}
+
+.cybr-btn:after {
+	background-color: black;
+}
+
+.cybr-btn__tag {
+	position: absolute;
+	padding: 1px 4px;
+	letter-spacing: 1px;
+	line-height: 1;
+	bottom: -5%;
+	right: 5%;
+	font-weight: normal;
+	color: hsl(0, 0%, 0%);
+	font-size: var(--label-size);
+}
+
+.cybr-btn__glitch {
+	position: absolute;
+	top: calc(var(--border) * -1);
+	left: calc(var(--border) * -1);
+	right: calc(var(--border) * -1);
+	bottom: calc(var(--border) * -1);
+	background: var(--shadow-primary);
+	text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+	clip-path: var(--clip);
+	animation: glitch 2s infinite;
+	display: none;
+}
+
+.cybr-btn:hover .cybr-btn__glitch {
+	display: block;
+}
+
+.cybr-btn__glitch:before {
+	content: '';
+	position: absolute;
+	top: calc(var(--border) * 1);
+	right: calc(var(--border) * 1);
+	bottom: calc(var(--border) * 1);
+	left: calc(var(--border) * 1);
+	clip-path: var(--clip);
+	background-color: red;
+	z-index: -1;
+}
+
+@keyframes glitch {
+	0% {
+		clip-path: var(--clip-one);
+	}
+	2%, 8% {
+		clip-path: var(--clip-two);
+		transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+	}
+	6% {
+		clip-path: var(--clip-two);
+		transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+	}
+	9% {
+		clip-path: var(--clip-two);
+		transform: translate(0, 0);
+	}
+	10% {
+		clip-path: var(--clip-three);
+		transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+	}
+	13% {
+		clip-path: var(--clip-three);
+		transform: translate(0, 0);
+	}
+	14%, 21% {
+		clip-path: var(--clip-four);
+		transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+	}
+	25% {
+		clip-path: var(--clip-five);
+		transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+	}
+	30% {
+		clip-path: var(--clip-five);
+		transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+	}
+	35%, 45% {
+		clip-path: var(--clip-six);
+		transform: translate(calc(var(--shimmy-distance) * -1%));
+	}
+	40% {
+		clip-path: var(--clip-six);
+		transform: translate(calc(var(--shimmy-distance) * 1%));
+	}
+	50% {
+		clip-path: var(--clip-six);
+		transform: translate(0, 0);
+	}
+	55% {
+		clip-path: var(--clip-seven);
+		transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+	}
+	60% {
+		clip-path: var(--clip-seven);
+		transform: translate(0, 0);
+	}
+	31%, 61%, 100% {
+		clip-path: var(--clip-four);
+	}
+}
+
+.cybr-btn:nth-of-type(2) {
+	--primary-hue: 260;
+}
+
+/*ENDDDD OF BUTTONSSSS*/
+
+
+/* Footer Section */
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4rem;
+	background-color: black;
+	padding: 20px 15px;
+}
+
+#footer p, a {
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+a.one {
+	color: #373334;
+	text-decoration: underline;
+}
+a:hover{
+	color: red;
+}
+
+
+/*a:visited {
+	color: purple;
+}*/
+
+/* Responsive Media Queries */
+
+/* iPhone 5 users */
+@media (max-width: 330px) {
+	.grid-contain {
+		grid-template: repeat(12, minmax(200px, 2fr)) / repeat(
+			auto-fit,
+			minmax(200px, 1fr)
+			);
+	}
+
+	.grid:hover > .year::after {
+		font-size: 9px;
+	}
+
+	.quote-resize {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	#qb-resize {
+		width: 150%;
+		margin-left: -20%;
+	}
+
+	.learn-container {
+		margin-left: -25%;
+	}
+
+	.learn-text {
+		font-size: 18px;
+		transform: translateX(20%);
+	}
+}
+
+@media (max-width: 500px) {
+	.grid-contain {
+		grid-template: repeat(12, minmax(200px, 2fr)) / repeat(
+			auto-fit,
+			minmax(300px, 1fr)
+			);
+	}
+
+	.grid:hover > .year::after {
+		font-size: var(--hover-fontsize-sm);
+	}
+
+	.quote-resize {
+		width: 95%;
+	}
+
+	#qb-resize {
+		width: 95%;
+	}
+
+	.learn-text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 905px) and (min-width: 500px) {
+	.grid-contain {
+		grid-template: repeat(12, minmax(300px, 1fr)) / repeat(
+			auto-fit,
+			minmax(400px, 1fr)
+			);
+	}
+}
+
+@media (max-width: 1315px) and (min-width: 905px) {
+	.grid-contain {
+		grid-template: repeat(6, minmax(300px, 1fr)) / repeat(
+			auto-fit,
+			minmax(400px, 1fr)
+			);
+	}
+}
+
+@media (max-width: 1725px) and (min-width: 1315px) {
+	.grid-contain {
+		grid-template: repeat(4, minmax(300px, 1fr)) / repeat(
+			auto-fit,
+			minmax(400px, 1fr)
+			);
+	}
+}
+
+@media (min-width: 1725px) {
+	.grid-contain {
+		grid-template: repeat(2, minmax(300px, 1fr)) / repeat(
+			auto-fit,
+			minmax(400px, 1fr)
+			);
+	}
+}
+

@@ -1,0 +1,46 @@
+body {
+  cursor: vertical-text; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  /*color: #777;*/
+  /*background-color: #eee;*/
+  background: #fcf8f5;
+  /*background: white;*/
+}
+
+h2{
+   display: inline-block;
+    font-weight: 650;
+    line-height: 1.4;
+    font-size: 250%;
+    color: #373334;
+    display:inline;
+/*float:right;*/
+}
+
+.quote-container {
+  font-size: 15px;
+  padding: 10px 10px;
+  margin: 5px 0;
+  /*letter-spacing: 1.5px;*/
+  text-align: left;
+}
+
+a{
+	padding: 15px;
+ color: black;
+ font-weight: 200px;
+ font-size: 23px;
+ text-decoration: none;
+ display: all;
+ position: absolute;
+ z-index: 99;
+ letter-spacing: -1.5px;
+}
+/*@font-face {
+  font-family: poppins;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: shadow-primary;
+}*/
